@@ -84,7 +84,8 @@ def main():
             ("trend", "3a. Disenrollment trend", trend()), ("segments", "3b. Segment risk", segment_table())]
     parts = []
     for i, (anchor, title, fig) in enumerate(figs):
-        html = fig.to_html(include_plotlyjs=(i == 0), full_html=False, config={"displaylogo": False})
+        html = fig.to_html(include_plotlyjs=(i == 0), full_html=False, div_id=f"{anchor}-plot",
+                           config={"displaylogo": False})
         parts.append(f'<section id="{anchor}"><h2>{title}</h2>{html}</section>')
     hr = r["cox_adjusted_pcp"]
     tiles = [
