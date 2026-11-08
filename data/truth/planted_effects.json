@@ -1,0 +1,58 @@
+{
+  "seed": 42,
+  "description": "Realized planted values from src/generate_data.py. Synthetic data only.",
+  "row_counts": {
+    "dim_member": 28000,
+    "dim_plan": 12,
+    "dim_county": 40,
+    "fact_enrollment_span": 30120,
+    "fact_member_month": 478358,
+    "fact_onboarding_event": 194720,
+    "dim_date": 1096
+  },
+  "hazard_parameters": {
+    "baseline_monthly_hazard": 0.012,
+    "oep_multiplier": 2.0,
+    "dual_multiplier": 1.9,
+    "broker_multiplier": 1.25,
+    "online_multiplier": 1.1,
+    "agent_multiplier": 1.0,
+    "pcp_visit_90d_multiplier": 0.55
+  },
+  "funnel_parameters": {
+    "p_welcome_call_complete": 0.68,
+    "p_hra_given_welcome": 0.6,
+    "p_hra_given_welcome_online": 0.45,
+    "p_pcp_given_hra": 0.85,
+    "p_pcp_no_hra": 0.15,
+    "dual_pcp_multiplier": 0.8,
+    "dual_dsnp_multiplier": 1.6
+  },
+  "realized": {
+    "retention_12m_jan_jun_2024_cohorts": 0.8350663893776996,
+    "n_jan_jun_2024_cohorts": 6251,
+    "landmark_members": 26277,
+    "welcome_complete_rate_landmark": 0.6823838337709784,
+    "hra_rate_landmark": 0.3964683944133653,
+    "hra_rate_online_landmark": 0.31217208814270725,
+    "hra_rate_non_online_landmark": 0.4107723124860895,
+    "pcp90_rate_landmark": 0.4125661224645127,
+    "pcp90_given_hra_landmark": 0.8208869264734114,
+    "pcp90_given_no_hra_landmark": 0.1443344473169809,
+    "dual_share": 0.22057142857142858,
+    "dsnp_share_dual": 0.32075777202072536,
+    "dsnp_share_nondual": 0.20179618768328444,
+    "first_island_disenrollments": 7119,
+    "mean_covered_months": 16.600464285714285
+  },
+  "data_quality": {
+    "duplicate_onboarding_events": 5671,
+    "retro_terminations": 145,
+    "members_with_overlapping_spans": 224,
+    "null_county_fips": 440,
+    "members_pcp_visit_before_enroll": 84,
+    "nonstandard_channel_codes": 4163,
+    "plan_change_spans": 1419,
+    "reenrollment_spans": 477
+  }
+}

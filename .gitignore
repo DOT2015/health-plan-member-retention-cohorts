@@ -1,0 +1,12 @@
+# generated data (rebuilt by `make all`)
+data/raw/
+data/outputs/
+data/warehouse.duckdb
+data/warehouse.duckdb.wal
+# build notes are local only
+BUILD_NOTES.md
+__pycache__/
+.pytest_cache/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

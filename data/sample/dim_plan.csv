@@ -1,0 +1,13 @@
+plan_id,plan_type,monthly_premium,star_rating
+P01,HMO,0.0,4.0
+P02,HMO,0.0,4.5
+P03,HMO,19.0,4.5
+P04,HMO,35.0,4.0
+P05,HMO,49.0,4.5
+P06,PPO,29.0,4.0
+P07,PPO,59.0,3.5
+P08,PPO,89.0,3.5
+P09,PPO,119.0,4.0
+P10,D-SNP,0.0,5.0
+P11,D-SNP,0.0,3.5
+P12,D-SNP,0.0,4.0
