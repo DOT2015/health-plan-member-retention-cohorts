@@ -1,0 +1,29 @@
+# Executive summary: new-member retention and onboarding outreach
+
+**For:** VP of Member Experience (simulated scenario). **Data:** synthetic, {{n_members}} Medicare Advantage members enrolled Jan 2023-Jun 2025, observed through Dec 2025. No real members or organizations.
+
+## The question
+
+Should the plan fund a 90-day onboarding outreach team (welcome call, then health risk assessment, then first primary care visit)? If so, how many staff, and who should they call first?
+
+## What we found
+
+1. **12-month retention is {{ret12_all}}** across all cohorts (95% CI {{ret12_all_lo}}-{{ret12_all_hi}}).
+2. **Members who see a primary care doctor in their first 90 days stay longer.** Among members still enrolled at day 90, 12-month retention is {{km_all_pcp1}} with a visit and {{km_all_pcp0}} without. For dual-eligible members it is {{km_dual_pcp1}} vs {{km_dual_pcp0}}. After accounting for dual status, channel, plan type, and age, members with a visit leave at {{hr_adj}} times the rate of members without one (95% CI {{hr_adj_lo}}-{{hr_adj_hi}}).
+3. **This does not prove that the visit causes members to stay.** Members who book an early visit may be more engaged to begin with.
+4. **Online enrollees fall behind at the health risk assessment.** {{hra_step_online}} of online members who complete the welcome call finish the assessment, against about {{hra_step_other}} in other channels.
+5. **Departures run {{oep_ratio}} times higher in January-March.** Month-end reports miss {{snapshot_undercount}} of departures because some are posted 30-60 days late.
+
+## What it would cost and return
+
+- Outreach list: {{workload}} new members a month without a visit by day 60 (January peak: {{workload_peak}}). That is about {{fte}} full-time staff, so {{fte_funded}} FTE at {{staff_cost}} a year (simulated cost).
+- A 10-point rise in the visit rate would retain about {{sc100_ret}} more members at month 12 if the link were fully causal, {{sc50_ret}} if half causal, {{sc25_ret}} if a quarter causal.
+- Revenue over the first 12 months: {{sc100_rev12}} at best, below the staff cost. Over 24 months: {{sc25_rev24}} to {{sc100_rev24}}. One year of outreach pays for itself from 24 months of retained revenue if at least {{breakeven24}} of the link is causal.
+
+## Recommendations
+
+1. **Pilot before you fund.** Randomize outreach for one month of new members (about {{pilot_n_visit}} per group) to confirm that calls raise the visit rate. A pilot cannot measure the retention effect directly; that would need {{pilot_n_churn100}} members per group, about {{pilot_years}} years of outreach volume.
+2. **Fix the online assessment step.** Build the assessment into the online enrollment flow. This is the cheapest gap to close.
+3. **Call dual-eligible members first and staff for January.** Duals without an early visit have the lowest retention ({{dual_nv_ret}}). Report churn by effective date and restate prior months when late terminations post.
+
+*Method details: docs/methodology.md. All figures are from the simulated scenario.*

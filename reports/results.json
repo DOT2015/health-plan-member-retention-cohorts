@@ -1,0 +1,661 @@
+{
+  "data_quality": {
+    "duplicate_events_removed": 5671,
+    "retro_terminations": 145,
+    "members_with_overlapping_spans": 224,
+    "null_county_fips": 440,
+    "members_pcp_visit_before_enroll": 84,
+    "nonstandard_channel_codes": 4163,
+    "unmapped_channel_codes": 0,
+    "plan_change_spans_merged": 1430,
+    "raw_member_month_rows": 478358,
+    "raw_member_month_active_after_term": 135,
+    "raw_onboarding_events": 194720,
+    "raw_enrollment_spans": 30120
+  },
+  "retention_12m_jan_jun_2024": 0.8350663893776997,
+  "retention_12m_all_km": {
+    "est": 0.8379441322765592,
+    "lo": 0.8334979004721033,
+    "hi": 0.842283167575331
+  },
+  "n_members": 28000,
+  "n_disenrolled_first_island": 7119,
+  "n_landmark": 26277,
+  "km_landmark_12m": {
+    "dual0_pcp0": {
+      "n": 11800,
+      "ret12": 0.8868285879317612,
+      "lo": 0.8808125481958301,
+      "hi": 0.8925597942680505
+    },
+    "dual0_pcp1": {
+      "n": 8892,
+      "ret12": 0.9399636619201907,
+      "lo": 0.9346974179931545,
+      "hi": 0.944817847694138
+    },
+    "dual1_pcp0": {
+      "n": 3636,
+      "ret12": 0.802207500677011,
+      "lo": 0.78846677971463,
+      "hi": 0.8151632343960964
+    },
+    "dual1_pcp1": {
+      "n": 1949,
+      "ret12": 0.883024657890971,
+      "lo": 0.8675001116972347,
+      "hi": 0.8968397225671659
+    },
+    "all_pcp0": {
+      "n": 15436,
+      "ret12": 0.8669784336790847,
+      "lo": 0.8613662774439544,
+      "hi": 0.8723805758151757
+    },
+    "all_pcp1": {
+      "n": 10841,
+      "ret12": 0.9297146705102461,
+      "lo": 0.9246151083983268,
+      "hi": 0.9344816004633643
+    }
+  },
+  "logrank_pcp": {
+    "chi2": 245.92574739230224,
+    "p": 2.007669311971578e-55
+  },
+  "logrank_pcp_dual0": {
+    "chi2": 162.23051817188042,
+    "p": 3.6840659409281323e-37
+  },
+  "logrank_pcp_dual1": {
+    "chi2": 56.37395425963676,
+    "p": 5.991883819473402e-14
+  },
+  "cox_unadjusted_pcp": {
+    "hr": 0.5130113609792198,
+    "lo": 0.47119481521525947,
+    "hi": 0.5585389482130031,
+    "p": 2.0318754094946665e-53
+  },
+  "cox_dual_only_pcp": {
+    "hr": 0.5322732543976513,
+    "lo": 0.4888035381184134,
+    "hi": 0.5796087696861829,
+    "p": 1.088559568779138e-47
+  },
+  "cox_adjusted": {
+    "pcp_visit_90d": {
+      "hr": 0.5329538452580364,
+      "lo": 0.4893888920999709,
+      "hi": 0.580396910842235,
+      "p": 2.0399328190002274e-47
+    },
+    "dual_eligible_flag": {
+      "hr": 1.8715091609101817,
+      "lo": 1.7257958162969662,
+      "hi": 2.0295254550368154,
+      "p": 7.016505200621214e-52
+    },
+    "channel_agent": {
+      "hr": 1.0132749741702909,
+      "lo": 0.9080905024850702,
+      "hi": 1.130643003610407,
+      "p": 0.8135570720969102
+    },
+    "channel_broker": {
+      "hr": 1.262749889786742,
+      "lo": 1.1504678007244822,
+      "hi": 1.3859903624875933,
+      "p": 9.099044344179937e-07
+    },
+    "channel_online": {
+      "hr": 1.1014990198255274,
+      "lo": 0.9790197010971975,
+      "hi": 1.2393009960032877,
+      "p": 0.10795917474223353
+    },
+    "plan_type_PPO": {
+      "hr": 0.960381650508219,
+      "lo": 0.8786004001357298,
+      "hi": 1.0497752043937212,
+      "p": 0.3733358691664158
+    },
+    "plan_type_D-SNP": {
+      "hr": 0.9899735876857741,
+      "lo": 0.8996732670201777,
+      "hi": 1.0893373630645655,
+      "p": 0.8364009647998603
+    },
+    "age_band_70-74": {
+      "hr": 0.9352771446223789,
+      "lo": 0.8495590372832772,
+      "hi": 1.0296439668869246,
+      "p": 0.17245908646342945
+    },
+    "age_band_75-79": {
+      "hr": 0.994357262412605,
+      "lo": 0.892903384772199,
+      "hi": 1.1073385790389214,
+      "p": 0.9179156622615102
+    },
+    "age_band_80-84": {
+      "hr": 0.9437387318672773,
+      "lo": 0.819067768044479,
+      "hi": 1.0873859633774416,
+      "p": 0.4230994125120354
+    },
+    "age_band_85+": {
+      "hr": 0.7584614265750972,
+      "lo": 0.6348137234281735,
+      "hi": 0.9061929734217855,
+      "p": 0.0023277198071857486
+    }
+  },
+  "cox_adjusted_pcp": {
+    "hr": 0.5329538452580364,
+    "lo": 0.4893888920999709,
+    "hi": 0.580396910842235,
+    "p": 2.0399328190002274e-47
+  },
+  "ph_check_pcp": {
+    "schoenfeld_time_corr": -0.028619622139120393,
+    "p": 0.13781508612763313
+  },
+  "cox_n": 26277,
+  "cox_events": 2690,
+  "poisson_rate_ratios": {
+    "Intercept": {
+      "rr": 0.011572771503036462,
+      "lo": 0.011011778106113763,
+      "hi": 0.012162344625082403
+    },
+    "channel[T.agent]": {
+      "rr": 1.0281646859873927,
+      "lo": 0.9612559837023648,
+      "hi": 1.099730601873551
+    },
+    "channel[T.broker]": {
+      "rr": 1.2828753274212463,
+      "lo": 1.21153205725007,
+      "hi": 1.3584197759007126
+    },
+    "channel[T.online]": {
+      "rr": 1.1214313176156028,
+      "lo": 1.0431037200561042,
+      "hi": 1.2056406050027557
+    },
+    "is_oep_month": {
+      "rr": 2.0281307042215952,
+      "lo": 1.9320005205161899,
+      "hi": 2.129044019256989
+    },
+    "dual_eligible_flag": {
+      "rr": 1.8788254902231911,
+      "lo": 1.7878234927543115,
+      "hi": 1.9744595800529154
+    },
+    "pcp_visited": {
+      "rr": 0.5422534228600637,
+      "lo": 0.5129244673952127,
+      "hi": 0.5732594042484928
+    }
+  },
+  "person_months": 464813,
+  "poisson_unadjusted_pcp_rr": 0.5014523277271824,
+  "funnel": {
+    "agent": {
+      "members": 5330.0,
+      "pct_welcome": 67.58,
+      "step_hra_given_welcome": 61.52,
+      "step_pcp_given_hra": 81.18,
+      "pct_hra_all": 41.58,
+      "pct_pcp_all": 42.36
+    },
+    "all": {
+      "members": 26277.0,
+      "pct_welcome": 68.24,
+      "step_hra_given_welcome": 58.1,
+      "step_pcp_given_hra": 82.09,
+      "pct_hra_all": 39.65,
+      "pct_pcp_all": 41.26
+    },
+    "broker": {
+      "members": 7814.0,
+      "pct_welcome": 67.93,
+      "step_hra_given_welcome": 60.23,
+      "step_pcp_given_hra": 81.95,
+      "pct_hra_all": 40.91,
+      "pct_pcp_all": 42.04
+    },
+    "direct": {
+      "members": 9321.0,
+      "pct_welcome": 68.74,
+      "step_hra_given_welcome": 59.54,
+      "step_pcp_given_hra": 82.6,
+      "pct_hra_all": 40.93,
+      "pct_pcp_all": 42.23
+    },
+    "online": {
+      "members": 3812.0,
+      "pct_welcome": 68.57,
+      "step_hra_given_welcome": 45.52,
+      "step_pcp_given_hra": 82.52,
+      "pct_hra_all": 31.22,
+      "pct_pcp_all": 35.73
+    }
+  },
+  "funnel_recovered": {
+    "welcome_complete_rate": 0.6823838337709784,
+    "hra_rate": 0.3964683944133653,
+    "hra_rate_online": 0.31217208814270725,
+    "hra_rate_non_online": 0.4107723124860895,
+    "pcp90_rate": 0.4125661224645127,
+    "pcp90_given_hra": 0.8208869264734114,
+    "pcp90_given_no_hra": 0.1443344473169809
+  },
+  "seasonality": {
+    "oep_rate_pct": 2.60362722845369,
+    "non_oep_rate_pct": 1.2275796433892021,
+    "oep_ratio": 2.1209436328427405,
+    "effective_disenrollments_2024_2025": 6310,
+    "snapshot_disenrollments_2024_2025": 6182,
+    "snapshot_undercount_pct": 2.028526148969889
+  },
+  "segments": {
+    "n_cells": 24,
+    "n_suppressed": 0,
+    "worst": {
+      "segment": "broker / PPO / dual",
+      "ret12": 79.19,
+      "n": 346
+    },
+    "best": {
+      "segment": "direct / PPO / non-dual",
+      "ret12": 92.45,
+      "n": 1854
+    }
+  },
+  "raw_retention_12m": {
+    "all_pcp0": 86.41,
+    "all_pcp1": 92.85,
+    "dual_pcp0": 79.55,
+    "dual_pcp1": 88.49,
+    "non-dual_pcp0": 88.51,
+    "non-dual_pcp1": 93.81
+  },
+  "outreach_priority": [
+    {
+      "channel": "broker",
+      "dual": 1,
+      "n": 795,
+      "churn_12m_pct": 22.389937106918232
+    },
+    {
+      "channel": "online",
+      "dual": 1,
+      "n": 483,
+      "churn_12m_pct": 20.91097308488613
+    },
+    {
+      "channel": "direct",
+      "dual": 1,
+      "n": 1036,
+      "churn_12m_pct": 19.594594594594593
+    },
+    {
+      "channel": "agent",
+      "dual": 1,
+      "n": 591,
+      "churn_12m_pct": 18.950930626057527
+    },
+    {
+      "channel": "broker",
+      "dual": 0,
+      "n": 2848,
+      "churn_12m_pct": 12.85112359550562
+    },
+    {
+      "channel": "online",
+      "dual": 0,
+      "n": 1487,
+      "churn_12m_pct": 11.566913248150634
+    },
+    {
+      "channel": "direct",
+      "dual": 0,
+      "n": 3262,
+      "churn_12m_pct": 10.760269773145314
+    },
+    {
+      "channel": "agent",
+      "dual": 0,
+      "n": 1908,
+      "churn_12m_pct": 10.639412997903563
+    }
+  ],
+  "sizing": {
+    "hr_used": 0.5329538452580364,
+    "all_members": {
+      "new_members_2024": 11507,
+      "monthly_outreach_workload": 768.8333333333334,
+      "peak_monthly_workload": 1701,
+      "outreach_hours_per_month": 576.625,
+      "fte_needed": 4.805208333333334,
+      "fte_needed_peak": 10.63125,
+      "fte_funded": 5,
+      "annual_staff_cost": 325000.0,
+      "no_visit_retention_12m": 0.8669784336790847,
+      "delta_retention_12m_per_converted_member": 0.059768765415189495,
+      "delta_member_months_per_converted_member": 0.27724195973608956,
+      "extra_pcp_visitors_per_year": 1080.8000000000002,
+      "scenarios": [
+        {
+          "causal_share": 0.25,
+          "members_retained_12m": 16.149520415184206,
+          "member_months_first_year": 74.91077752069141,
+          "revenue_first_year": 74910.77752069141,
+          "net_of_staff_cost": -250089.2224793086,
+          "revenue_24m": 397067.389496982
+        },
+        {
+          "causal_share": 0.5,
+          "members_retained_12m": 32.29904083036841,
+          "member_months_first_year": 149.82155504138282,
+          "revenue_first_year": 149821.55504138282,
+          "net_of_staff_cost": -175178.44495861718,
+          "revenue_24m": 794134.778993964
+        },
+        {
+          "causal_share": 1.0,
+          "members_retained_12m": 64.59808166073682,
+          "member_months_first_year": 299.64311008276565,
+          "revenue_first_year": 299643.11008276563,
+          "net_of_staff_cost": -25356.889917234366,
+          "revenue_24m": 1588269.557987928
+        }
+      ],
+      "delta_member_months_24m_per_converted_member": 1.4695314193078532,
+      "breakeven_causal_share": 1.084623637467354,
+      "breakeven_causal_share_24m": 0.20462521513773813
+    },
+    "dual_only": {
+      "new_members_2024": 2515,
+      "monthly_outreach_workload": 172.5,
+      "peak_monthly_workload": 371,
+      "outreach_hours_per_month": 129.375,
+      "fte_needed": 1.078125,
+      "fte_needed_peak": 2.31875,
+      "fte_funded": 2,
+      "annual_staff_cost": 130000.0,
+      "no_visit_retention_12m": 0.802207500677011,
+      "delta_retention_12m_per_converted_member": 0.08697158369153968,
+      "delta_member_months_per_converted_member": 0.41442315610770175,
+      "extra_pcp_visitors_per_year": 226.2,
+      "scenarios": [
+        {
+          "causal_share": 0.25,
+          "members_retained_12m": 4.918243057756569,
+          "member_months_first_year": 23.435629477890533,
+          "revenue_first_year": 23435.629477890532,
+          "net_of_staff_cost": -106564.37052210947,
+          "revenue_24m": 117089.73416761616
+        },
+        {
+          "causal_share": 0.5,
+          "members_retained_12m": 9.836486115513138,
+          "member_months_first_year": 46.871258955781066,
+          "revenue_first_year": 46871.258955781064,
+          "net_of_staff_cost": -83128.74104421894,
+          "revenue_24m": 234179.46833523232
+        },
+        {
+          "causal_share": 1.0,
+          "members_retained_12m": 19.672972231026275,
+          "member_months_first_year": 93.74251791156213,
+          "revenue_first_year": 93742.51791156213,
+          "net_of_staff_cost": -36257.48208843787,
+          "revenue_24m": 468358.93667046464
+        }
+      ],
+      "delta_member_months_24m_per_converted_member": 2.0705523283398084,
+      "breakeven_causal_share": 1.3867773439011275,
+      "breakeven_causal_share_24m": 0.2775648969659085
+    },
+    "assumptions": {
+      "revenue_pmpm": 1000,
+      "uplift_pp": 0.1,
+      "attempts_per_member": 3,
+      "minutes_per_attempt": 15,
+      "productive_hours_per_fte_month": 120,
+      "fte_annual_cost": 65000
+    }
+  },
+  "pilot": {
+    "no_visit_share_day60": 0.8174005493045096,
+    "visit_lift_among_called": 0.12233904183828313,
+    "baseline_visit_by_day90_among_called": 0.27801683816651074,
+    "n_per_arm_visit_rate": 234,
+    "n_per_arm_churn_share_25": 538601,
+    "churn_reduction_pp_share_25": 0.1828013373187859,
+    "n_per_arm_churn_share_50": 133855,
+    "churn_reduction_pp_share_50": 0.365602674637569,
+    "n_per_arm_churn_share_100": 33063,
+    "churn_reduction_pp_share_100": 0.7312053492751408,
+    "baseline_churn_12m_no_visit": 0.13302156632091533
+  },
+  "validation": [
+    {
+      "effect": "PCP visit within 90 days, hazard ratio (Cox, adjusted)",
+      "kind": "parameter",
+      "planted": 0.55,
+      "recovered": 0.5329538452580364,
+      "ci_lo": 0.4893888920999709,
+      "ci_hi": 0.580396910842235,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "effect": "OEP (Jan-Mar) rate ratio",
+      "kind": "parameter",
+      "planted": 2.0,
+      "recovered": 2.0281307042215952,
+      "ci_lo": 1.9320005205161899,
+      "ci_hi": 2.129044019256989,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "effect": "Dual-eligible rate ratio",
+      "kind": "parameter",
+      "planted": 1.9,
+      "recovered": 1.8788254902231911,
+      "ci_lo": 1.7878234927543115,
+      "ci_hi": 1.9744595800529154,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "effect": "Broker channel rate ratio",
+      "kind": "parameter",
+      "planted": 1.25,
+      "recovered": 1.2828753274212463,
+      "ci_lo": 1.21153205725007,
+      "ci_hi": 1.3584197759007126,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "effect": "Online channel rate ratio",
+      "kind": "parameter",
+      "planted": 1.1,
+      "recovered": 1.1214313176156028,
+      "ci_lo": 1.0431037200561042,
+      "ci_hi": 1.2056406050027557,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "effect": "Agent channel rate ratio",
+      "kind": "parameter",
+      "planted": 1.0,
+      "recovered": 1.0281646859873927,
+      "ci_lo": 0.9612559837023648,
+      "ci_hi": 1.099730601873551,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "effect": "PCP visit rate ratio (Poisson, time-varying)",
+      "kind": "parameter",
+      "planted": 0.55,
+      "recovered": 0.5422534228600637,
+      "ci_lo": 0.5129244673952127,
+      "ci_hi": 0.5732594042484928,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "effect": "Baseline monthly hazard (Apr-Dec, reference group)",
+      "kind": "parameter",
+      "planted": 0.012,
+      "recovered": 0.011572771503036462,
+      "ci_lo": 0.011011778106113763,
+      "ci_hi": 0.012162344625082403,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "effect": "12-month retention, Jan-Jun 2024 cohorts",
+      "kind": "realized",
+      "planted": 0.8350663893776996,
+      "recovered": 0.8350663893776997,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "effect": "Welcome call completion (landmark)",
+      "kind": "realized",
+      "planted": 0.6823838337709784,
+      "recovered": 0.6823838337709784,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "effect": "HRA completion, all (landmark)",
+      "kind": "realized",
+      "planted": 0.3964683944133653,
+      "recovered": 0.3964683944133653,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "effect": "HRA completion, online (landmark)",
+      "kind": "realized",
+      "planted": 0.31217208814270725,
+      "recovered": 0.31217208814270725,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "effect": "PCP visit within 90 days (landmark)",
+      "kind": "realized",
+      "planted": 0.4125661224645127,
+      "recovered": 0.4125661224645127,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "effect": "PCP visit given HRA (landmark)",
+      "kind": "realized",
+      "planted": 0.8208869264734114,
+      "recovered": 0.8208869264734114,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "effect": "PCP visit without HRA (landmark)",
+      "kind": "realized",
+      "planted": 0.1443344473169809,
+      "recovered": 0.1443344473169809,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "effect": "Cross-feed duplicate events",
+      "kind": "data quality",
+      "planted": 5671,
+      "recovered": 5671,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "effect": "Retro-terminations",
+      "kind": "data quality",
+      "planted": 145,
+      "recovered": 145,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "effect": "Members with overlapping spans",
+      "kind": "data quality",
+      "planted": 224,
+      "recovered": 224,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "effect": "Null county_fips",
+      "kind": "data quality",
+      "planted": 440,
+      "recovered": 440,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "effect": "PCP visit before enrollment",
+      "kind": "data quality",
+      "planted": 84,
+      "recovered": 84,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "effect": "Non-standard channel codes",
+      "kind": "data quality",
+      "planted": 4163,
+      "recovered": 4163,
+      "ci_lo": null,
+      "ci_hi": null,
+      "tolerance": 0,
+      "pass": true
+    }
+  ],
+  "validation_pass": 21,
+  "validation_total": 21
+}
